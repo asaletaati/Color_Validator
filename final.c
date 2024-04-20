@@ -3,7 +3,7 @@ Asal Etaati, final project of CS50X-Harvard
 This project is used to help front-end developers or learners who want to know more about color codes.
 This Command Line Argument is made for CS50X-Harvard final project, not for other purposes!
 It's a command-line argument written in C.
-Plz, Execute this command at the terminal prompt: ./final color_coding_type_number
+Pls, Execute this command at the terminal prompt: ./final color_coding_type_number
 argv[0] = Usage or "final"
 argv[1] = color_coding_type_number
 KEYS for color_coding_type_number: 1,2,3
@@ -100,7 +100,7 @@ bool HEX(void)
                 && (toupper(x[i]) > 
                     'F'))) // ****
         {
-            printf("Sorry this is'nt a HEX code! :(\n");
+            printf("Sorry this is not a HEX code! :(\n");
             return false;
         }
     }
@@ -120,10 +120,10 @@ bool RGB(void)
     for (int i = 0; i < 3; i++)
     {
         string color[] = {"Red", "Green", "Blue"}; // list of RGB colors
-        unsigned int x = get_int("Plz, enter the %dth color of your RGB code (that specifies the amount of %s you wanna have):\n", i + 1, color[i]);
+        unsigned int x = get_int("Pls, enter the %dth color of your RGB code (that specifies the amount of %s you wanna have):\n", i + 1, color[i]);
         if (x > 255)
         {
-            printf("Sorry this is'nt an RGB code:(\n");
+            printf("Sorry this is not an RGB code:(\n");
             return false;
         }
     }
@@ -183,7 +183,7 @@ bool EN_WORD(void)
     }
     if (found_the_color_name != 0) 
     {
-        printf("sorry, This is'nt a valid color name! :(\n"); // if the name is'nt found in the file. print this massage, close the file and return false
+        printf("sorry, This is not a valid color name! :(\n"); // if the name is'nt found in the file. print this massage, close the file and return false
         fclose(file);
         return false;
     }
